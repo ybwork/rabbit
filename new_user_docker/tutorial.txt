@@ -1,0 +1,17 @@
+docker pull ubuntu
+
+docker run -i -t -v ~/rabbit/task_with_docker/task:/home --name task ubuntu
+
+	exit
+
+docker ps -l -> contaner_id
+
+docker start container_id
+
+apt-get install -y python3-pip
+
+pip3 install pika
+
+rabbitmq будет на локальной машине
+
+для коннекта нужно создать нового пользователя в rabbitmq и установить дополнительные настройки соединения в pika
